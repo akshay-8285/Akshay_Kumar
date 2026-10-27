@@ -134,10 +134,85 @@ body.dark {
   pointer-events: none;
 }
 
-.project-card span {
+.project-card > span {
   display: block;
   padding: .8rem;
   text-align: center;
+}
+
+/* Rogue Rides & Detailed Project Card Styling */
+.project-card .project-info {
+  padding: 1.1rem 1.25rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  text-align: left;
+}
+
+.project-card .project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-card .project-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.project-card .status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  line-height: 1;
+}
+
+.project-card .status-badge::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fbbf24;
+  box-shadow: 0 0 6px rgba(251, 191, 36, 0.6);
+}
+
+.project-card .project-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.project-card .project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.project-card .project-links a {
+  color: #5eead4;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.project-card .project-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* MODAL */
